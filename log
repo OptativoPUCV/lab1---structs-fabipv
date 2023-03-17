@@ -50,3 +50,17 @@ Fri 17 Mar 2023 06:06:48 PM UTC:
  tests:  6|2
 total_score: 50/70
 129da7e
+Fri 17 Mar 2023 06:19:47 PM UTC: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:29: error: expected expression before ‘)’ token
+   87 |   Vector *vector = (vector *) malloc(sizeof(vector));
+      |                             ^
+exercises.c:91:11: error: returning ‘int’ from a function with return type ‘Vector *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   91 |    return n;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+1bef4db
