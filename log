@@ -16,3 +16,13 @@ Fri 17 Mar 2023 05:49:37 PM UTC:
  tests:  3|4
 total_score: 30/70
 2d64fbc
+Fri 17 Mar 2023 05:54:30 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:96:5: error: ‘Vector’ has no member named ‘pos’
+   96 |   v -> pos[i] = valor;
+      |     ^~
+Compilation failed
+06b6b68
