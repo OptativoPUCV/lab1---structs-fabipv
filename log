@@ -114,3 +114,9 @@ exercises.c:87:31: note: referencing an object of size 8 allocated by â€˜mallocâ
 cc1: all warnings being treated as errors
 Compilation failed
 0124b53
+Fri 17 Mar 2023 06:22:54 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 60/70
+a9244cb
