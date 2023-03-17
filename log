@@ -74,3 +74,23 @@ exercises.c:87:29: error: expected expression before ‘)’ token
       |                             ^
 Compilation failed
 d82eaa8
+Fri 17 Mar 2023 06:21:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:10: error: array subscript ‘Vector[0]’ is partly outside array bounds of ‘unsigned char[8]’ [-Werror=array-bounds]
+   88 |   vector -> datos = (int *)calloc(n, sizeof(int));
+      |          ^~
+exercises.c:87:32: note: referencing an object of size 8 allocated by ‘malloc’
+   87 |   Vector *vector = ((Vector *) malloc(sizeof(vector)));
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+exercises.c:89:10: error: array subscript ‘Vector[0]’ is partly outside array bounds of ‘unsigned char[8]’ [-Werror=array-bounds]
+   89 |   vector -> capacidad = n;
+      |          ^~
+exercises.c:87:32: note: referencing an object of size 8 allocated by ‘malloc’
+   87 |   Vector *vector = ((Vector *) malloc(sizeof(vector)));
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a318883
