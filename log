@@ -64,3 +64,13 @@ exercises.c:91:11: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 1bef4db
+Fri 17 Mar 2023 06:19:59 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:29: error: expected expression before ‘)’ token
+   87 |   Vector *vector = (vector *) malloc(sizeof(vector));
+      |                             ^
+Compilation failed
+d82eaa8
