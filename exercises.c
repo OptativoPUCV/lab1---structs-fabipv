@@ -12,8 +12,11 @@ Ejercicio 1.
 Programe la función void swap(int *a, int *b), la cual
 intercambia los valores de las variables apuntadas por a y b.
 */
-void swap(int *a, int *b) {
-
+void swap(int *a, int *b) 
+{
+  int aux = *a;
+  *a = *b;
+  *b = aux;
 }
 
 /*
@@ -22,8 +25,23 @@ Programe la función void arrayMaxMin(int *a, int n, int *max, int *min),
 la cual encuentra el máximo y el mínimo valor del arreglo a y los
 almacena en las variables apuntadas por max y min.
 */
-void arrayMaxMin(int *a, int n, int *max, int *min) {
-    
+void arrayMaxMin(int *a, int n, int *max, int *min) 
+{
+  *min = a[0];
+  *max = a[0];
+
+  for(int i = 0; i <= n; n++)
+  {
+    if(a[i] < *min)
+    {
+      *min = a[i];
+    }
+
+    if(a[i] > *max)
+    {
+      *max = a[i];
+    }   
+  }
 }
 
 
@@ -89,8 +107,9 @@ Ejercicio 7.
 Función que suma los vectores `a` y `b` y 
 actualiza el vector `c` con el resultado de la suma.
 */
-void sumaV(Vector * a, Vector * b, Vector * c) {
-
+void sumaV(Vector * a, Vector * b, Vector * c) 
+{
+  
 }
 
 /*
